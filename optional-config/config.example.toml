@@ -3,6 +3,11 @@
 # agents 目录包含参考角色定义，加载/注册方式以使用者客户端为准。
 # 模型、推理、服务层及更低的宿主并发限制必须运行时确认。
 
+# 作者本机保存的个性化风格。可在设置中自行选择，不是运行工作流的前提。
+# 这是顶层配置项，应放在 [agents] 等表之前。
+personality = "pragmatic"
+
+# 以下字段合并后会影响子智能体行为；使用前确认客户端支持、账号能力和授权范围。
 [agents]
 enabled = true
 max_concurrent_threads_per_session = 8
