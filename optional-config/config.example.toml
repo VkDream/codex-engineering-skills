@@ -1,0 +1,10 @@
+# 示例片段：先核对当前 Codex 版本是否支持，再合并到已有配置。
+# 不要整份覆盖 config.toml；此文件本身不会启用任何配置。
+# agents 目录包含参考角色定义，加载/注册方式以使用者客户端为准。
+# 模型、推理、服务层及更低的宿主并发限制必须运行时确认。
+
+[agents]
+enabled = true
+max_concurrent_threads_per_session = 8
+default_subagent_model = "gpt-5.6-luna"
+default_subagent_reasoning_effort = "max"
